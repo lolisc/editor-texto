@@ -1,0 +1,50 @@
+                                @import url(https://allfont.net/allfont.css?fonts=droid-sans-mono);
+                                body {
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                
+                                textarea {
+                                    width: 850px;
+                                    max-width: 100%;
+                                    font-size: 25px;
+                                    border: none;
+                                    border-radius: 2%;
+                                    /* Back-attachment e back-imagem foramm as linhas */
+                                    background-attachment: local;
+                                    background-image: linear-gradient(to right, #FFF, #FFF 10px, transparent 10px), linear-gradient(to left, #FFF, #FFF 10px, transparent 10px), repeating-linear-gradient(#FFF, #FFF 36px, #CCC 36px, #CCC 38px);
+                                    line-height: 30px;
+                                    resize: none;
+                                }
+                                /* background animado */
+                                
+                                body {
+                                    background: linear-gradient(221deg, #ff88f0, #213a7a, #a067c1);
+                                    background-size: 600% 600%;
+                                    -o-animation: Background-animation 15s ease infinite;
+                                    animation: Background-animation 15s ease infinite;
+                                }
+                                
+                                @-o-keyframes Background-animation {
+                                    0% {
+                                        background-position: 91% 0%
+                                    }
+                                    50% {
+                                        background-position: 10% 100%
+                                    }
+                                    100% {
+                                        background-position: 91% 0%
+                                    }
+                                }
+                                
+                                @keyframes Background-animation {
+                                    0% {
+                                        background-position: 91% 0%
+                                    }
+                                    50% {
+                                        background-position: 10% 100%
+                                    }
+                                    100% {
+                                        background-position: 91% 0%
+                                    }
+                                }
