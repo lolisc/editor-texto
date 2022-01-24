@@ -1,50 +1,58 @@
-                                @import url(https://allfont.net/allfont.css?fonts=droid-sans-mono);
-                                body {
-                                    width: 100%;
-                                    text-align: center;
-                                }
-                                
-                                textarea {
-                                    width: 850px;
-                                    max-width: 100%;
-                                    font-size: 25px;
-                                    border: none;
-                                    border-radius: 2%;
-                                    /* Back-attachment e back-imagem foramm as linhas */
-                                    background-attachment: local;
-                                    background-image: linear-gradient(to right, #FFF, #FFF 10px, transparent 10px), linear-gradient(to left, #FFF, #FFF 10px, transparent 10px), repeating-linear-gradient(#FFF, #FFF 36px, #CCC 36px, #CCC 38px);
-                                    line-height: 30px;
-                                    resize: none;
-                                }
-                                /* background animado */
-                                
-                                body {
-                                    background: linear-gradient(221deg, #ff88f0, #213a7a, #a067c1);
-                                    background-size: 600% 600%;
-                                    -o-animation: Background-animation 15s ease infinite;
-                                    animation: Background-animation 15s ease infinite;
-                                }
-                                
-                                @-o-keyframes Background-animation {
-                                    0% {
-                                        background-position: 91% 0%
-                                    }
-                                    50% {
-                                        background-position: 10% 100%
-                                    }
-                                    100% {
-                                        background-position: 91% 0%
-                                    }
-                                }
-                                
-                                @keyframes Background-animation {
-                                    0% {
-                                        background-position: 91% 0%
-                                    }
-                                    50% {
-                                        background-position: 10% 100%
-                                    }
-                                    100% {
-                                        background-position: 91% 0%
-                                    }
-                                }
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+    head {
+        display: flex;
+        box-shadow: 10px px 11px rgb(0, 0, 0);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h1 {
+        text-align: left;
+        color: rgb(226, 220, 220);
+        font-size: 55px;
+        margin-left: -250px;
+    }
+    
+    h2 {
+        font-family: 'comfortaa', cursive;
+        font-size: 28px;
+        color: #677a8a;
+        text-align: center;
+    }
+    
+    section {
+        font-family: 'Great Vibes', cursive;
+        font-size: 35px;
+        color: #677a8a;
+        text-align: center;
+    }
+    
+    body {
+        max-width: 842px;
+        font-family: 'Comfortaa', cursive;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    textarea {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        word-break: break-word;
+        width: 800px;
+        max-width: 100%;
+        font-family: "Droid Sans Mono", monospace;
+        color: #7d97ad;
+        font-size: 25px;
+        line-height: ;
+        background-attachment: local;
+        background-image: linear-gradient(to right, #FFF, #FFF 10px, transparent 10px), linear-gradient(to left, #FFF, #FFF 10px, transparent 10px), repeating-linear-gradient(#FFF, #FFF 36px, #CCC 36px, #CCC 38px);
+        line-height: 30px;
+        resize: none;
+        border: none;
+        padding: 15px 18px 0 18px;
+    }
+    
+    footer {
+        font-family: 'comfortaa', cursive;
+        font-size: 15px;
+    }
