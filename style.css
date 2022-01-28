@@ -1,58 +1,84 @@
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-    head {
-        display: flex;
-        box-shadow: 10px px 11px rgb(0, 0, 0);
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    h1 {
-        text-align: left;
-        color: rgb(226, 220, 220);
-        font-size: 55px;
-        margin-left: -250px;
-    }
-    
-    h2 {
-        font-family: 'comfortaa', cursive;
-        font-size: 28px;
-        color: #677a8a;
-        text-align: center;
-    }
-    
-    section {
-        font-family: 'Great Vibes', cursive;
-        font-size: 35px;
-        color: #677a8a;
-        text-align: center;
-    }
-    
-    body {
-        max-width: 842px;
-        font-family: 'Comfortaa', cursive;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    textarea {
-        box-shadow: 0 0 0 0;
-        outline: 0;
-        word-break: break-word;
-        width: 800px;
-        max-width: 100%;
-        font-family: "Droid Sans Mono", monospace;
-        color: #7d97ad;
-        font-size: 25px;
-        line-height: ;
-        background-attachment: local;
-        background-image: linear-gradient(to right, #FFF, #FFF 10px, transparent 10px), linear-gradient(to left, #FFF, #FFF 10px, transparent 10px), repeating-linear-gradient(#FFF, #FFF 36px, #CCC 36px, #CCC 38px);
-        line-height: 30px;
-        resize: none;
-        border: none;
-        padding: 15px 18px 0 18px;
-    }
-    
-    footer {
-        font-family: 'comfortaa', cursive;
-        font-size: 15px;
-    }
+            @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+            head {
+                display: flex;
+                box-shadow: 10px px 11px rgb(0, 0, 0);
+                justify-content: space-between;
+                text-align: center;
+            }
+            
+            h1 {
+                text-align: left;
+                margin-left: -500px;
+                color: rgb(226, 220, 220);
+                font-size: 55px;
+            }
+            
+            h2 {
+                font-family: 'comfortaa', cursive;
+                font-size: 28px;
+                color: #677a8a;
+                text-align: center;
+                justify-content: space-between;
+            }
+            
+            section {
+                font-family: 'Great Vibes', cursive;
+                font-size: 35px;
+                color: #677a8a;
+                text-align: center;
+            }
+            
+            body {
+                max-width: 842px;
+                font-family: 'Comfortaa', cursive;
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+            }
+            
+            textarea {
+                font-family: "Droid Sans Mono", monospace;
+                font-size: 18px;
+                color: #657a8d;
+                max-width: 100%;
+                padding: 0;
+                margin-top: 50px;
+                margin-right: 15px;
+                width: 800px;
+                line-height: 27px;
+                margin: 0 20px;
+                background-position-y: 36px;
+                background-color: white;
+                background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+                resize: none;
+                border: none;
+                outline: 0;
+            }
+            
+            button {
+                font-size: 15px;
+                font-family: Arial;
+                width: 140px;
+                height: 50px;
+                border-width: 1px;
+                color: #666666;
+                border-color: #dcdcdc;
+                font-weight: bold;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                box-shadow: inset 0px 1px 0px 0px #ffffff;
+                text-shadow: inset 0px 1px 0px #ffffff;
+                background: linear-gradient(#f9f9f9, #e9e9e9);
+            }
+            
+            button:hover {
+                background: linear-gradient(#e9e9e9, #f9f9f9);
+            }
+            
+            footer {
+                font-family: 'comfortaa', cursive;
+                font-size: 15px;
+                text-align: center;
+            }
