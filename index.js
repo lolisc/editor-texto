@@ -2,40 +2,65 @@ var textFile = null
 
 function makeTextFile(text) {
     var data = new Blob([text], { type: 'text/plain' });
-
-    // If we are replacing a previously generated file we need to
-    // manually revoke the object URL to avoid memory leaks.
+    
     if (textFile !== null) {
         window.URL.revokeObjectURL(textFile);
     }
-
+    
     textFile = window.URL.createObjectURL(data);
-
+    
     return textFile;
 };
 
-var test = makeTextFile('ronaldo')
-console.log(test)
+function parseBreakLines(value) {
+    return value.replaceAll('\n', '<br/>')
+}
 
-function botaoclick() {
-    const doc = document.getElementById("texto").value
-
+function saveAsImage() {
+    const doc = document.getElementById("text").value
+    
     var link = document.getElementById('downloadlink');
     link.href = makeTextFile(doc);
-    // link.style.display = 'block';
+    link.download = 'redacao.txt';
     link.click();
-
 }
 
-function printDiv() {
-    var divContents = document.getElementById("GFG").innerHTML;
-    var a = window.open('', '', 'height=500, width=500');
-    a.document.write('<html>');
-    a.document.write('<body > <h1>Div contents are <br>');
-    a.document.write(divContents);
-    a.document.write('</body></html>');
-    a.document.close();
-    a.print();
+function saveAsLog() {
+    var text = document.getElementById("text").value
+    var newText = parseBreakLines(text)
+    console.log(JSON.stringify(newText))
 }
 
-document.getElementById("botao").addEventListener("click", botaoclick)
+
+// // dom-to-image é uma biblioteca que pode transformar um nó DOM arbitrário em uma imagem vetorial (SVG) ou raster (PNG ou JPEG),
+// escrita em JavaScript.
+
+function saveAsImage() {
+    const node = document.querySelector('#redacao');
+    domtoimage
+    .toPng(node)
+    .then(function (dataUrl) {
+        // var img = new Image();
+        // img.src = dataUrl;
+        var link = document.getElementById('downloadlink');
+        link.href = dataUrl;
+        link.download = 'redacao';
+        link.click();
+        // document.body.appendChild(img);
+    })
+    .catch(function (error) {
+        console.error("oops, something went wrong!", error);
+    });
+}
+
+// function 
+//         var link = document.getElementById('downloadlink');
+//         link.href = canvas.toDataURL('image/png');
+//         link.download = 'redacao';
+//         link.click();
+
+//     });
+// }
+
+
+document.getElementById("botao").addEventListener("click", saveAsImage)

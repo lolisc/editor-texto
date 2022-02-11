@@ -36,7 +36,7 @@
                 flex-wrap: wrap;
             }
             
-            textarea {
+           textarea {
                 font-family: "Droid Sans Mono", monospace;
                 font-size: 18px;
                 color: #657a8d;

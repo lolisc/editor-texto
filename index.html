@@ -13,30 +13,26 @@
 <body>
     <h1>ProRedação</h1>
     <h2> Editor de Texto para Redações</h2>
+    <main>
+        <section id="first-section">
+            <p> Tema da redação: Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil. </p>
 
+            <div id="redacao">
+                <textarea id="texto" maxlength= "2300" cols= "30" rows= "30" ></textarea>
+            </div>
+            <div>
+                <button id="botao"> Salvar Redação </button>
+                <a id="downloadlink" style="display: none">Download</a>
+            </div>
+            <footer>
+                <p> 2022© Developed by Lorena Neves Carneiro da Costa.</p>
+            </footer>
+            </div>
+        </section>
+    </main>
 
-    <body>
-        <main>
-            <section id="first-section">
-                <p> Tema da redação: Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil. </p>
-
-                <div>
-                    <textarea id="texto" maxlength="2300" cols="30 " rows=" 30 "></textarea>
-                </div>
-                <div>
-                    <button id="botao"> Salvar Redação </button>
-                    <a download="info.txt" id="downloadlink" style="display: none">Download</a>
-                </div>
-                <script src="index.js"></script>
-                <script src="html2canvas.min.js"></script>
-
-
-                <footer>
-                    <p> 2022© Developed by Lorena Neves Carneiro da Costa.</p>
-                </footer>
-                </div>
-            </section>
-        </main>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image-more@2.9.5/dist/dom-to-image-more.min.js"></script>
+    <script src="index.js "></script>
+</body>
 
 </html>
